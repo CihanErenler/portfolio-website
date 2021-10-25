@@ -483,11 +483,15 @@ ul {
 }
 
 /* Contact */
-#contact {
+/* #contact {
   background: var(--contact-bg);
-}
+} */
 
 #contact textarea {
   height: 150px;
   resize: none;
+}
+
+/* footer */
+#main-footer .social-links {
 }
