@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="src/css/bootstrap.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <title>Cihan Erenler | Portfolio Website</title>
+  </head>
+  <body id="home">
+    <!-- Hamburger button starts here -->
+    <span class="ham-wrap d-block d-lg-none">
+      <div id="toggle" class="ham">
+        <div class="ham-bar"></div>
+        <div class="ham-bar"></div>
+        <div class="ham-bar"></div>
+      </div>
+    </span>
+    <!-- Hamburger button ends here -->
+
+    <!-- Main header starts here -->
+    <header id="main-header" class="overflow-hidden">
+      <img src="src/assets/svg/ellipse-1.svg" alt="ellipse" class="ellipse" />
+
+      <!-- Navbar -->
+      <nav id="main-navbar" class="navbar fixed-top py-3 primary-navbar">
+        <div class="container">
+          <a href="#">
+            <h1 id="logo" class="fw-bold secondary mb-0 h2">
+              <span class="primary">.</span>CE
+            </h1>
+          </a>
+          <div
+            class="
+              custom-nav
+              d-flex
+              text-center
+              align-items-center
+              h-100
+              mb-0
+              fw-normal
+              d-none d-lg-flex
+              ps-0
+            "
+          >
+            <li class="custom-nav-item">
+              <a href="#home" class="custom-nav-link">Home</a>
+            </li>
+            <li class="custom-nav-item">
+              <a href="#skills" class="custom-nav-link">Skills</a>
+            </li>
+            <li class="custom-nav-item">
+              <a href="#projects" class="custom-nav-link">Projects</a>
+            </li>
+            <li class="custom-nav-item">
+              <a href="#about" class="custom-nav-link">About</a>
+            </li>
+            <li class="custom-nav-item">
+              <a href="#contact" class="custom-nav-link">Contact</a>
+            </li>
+          </div>
+          <div class="social-links d-none d-lg-block">
+            <a href="#">
+              <i class="fab fa-linkedin-in mx-2"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-github-alt mx-2"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-facebook-f mx-2"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar ends -->
+
+      <!-- Showcase stars -->
+      <section id="showcase">
+        <div class="container h-100 d-flex">
+          <div
+            class="
+              row
+              flex-lg-row
+              justify-content-lg-start
+              flex-column-reverse
+              justify-content-center
+            "
+          >
+            <div
+              data-aos="fade-right"
+              class="
+                showcase-content
+                col-lg-6
+                d-flex
+                flex-column
+                align-items-center align-items-lg-start
+                justify-content-center
+                mt-lg-0 mt-sm-5
+                text-center text-lg-start
+              "
+            >
+              <h1 class="display-2 fw-bold secondary">
+                Hey, <br />
+                I'm<span class="primary"> Cihan Erenler</span>
+              </h1>
+              <p class="lead text-muted fw-normal fs-3">
+                I am
+                <span class="typing"></span>
+              </p>
+              <a href="#projects" class="custom-btn custom-btn-primary">
+                See my projects
+              </a>
+            </div>
+            <div
+              data-aos="fade-left"
+              class="showcase-image col-lg-6 d-flex align-items-center"
+            >
+              <div class="img-outer position-relative mb-3">
+                <img
+                  class="position-absolute dots d-none d-lg-block"
+                  src="src/assets/svg/dots.svg"
+                  alt="dots"
+                />
+                <div class="img-wrap overflow-hidden mx-auto">
+                  <img
+                    class="img-fluid"
+                    src="src/assets/img/1light-sm.png"
+                    alt="Cihan Erenler"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Showcase ends -->
+    </header>
+    <!-- Header ends here -->
+
+    <!-- Sidebar starts here -->
+    <aside id="sidebar" class="side p-5">
+      <ul class="side-nav">
+        <li class="side-nav-item">
+          <a href="#home" class="side-nav-link">Home</a>
+        </li>
+        <li class="side-nav-item">
+          <a href="#skills" class="side-nav-link">Skills</a>
+        </li>
+        <li class="side-nav-item">
+          <a href="#projects" class="side-nav-link">Projects</a>
+        </li>
+        <li class="side-nav-item">
+          <a href="#about" class="side-nav-link">About</a>
+        </li>
+        <li class="side-nav-item">
+          <a href="#contact" class="side-nav-link">Contact</a>
+        </li>
+      </ul>
+    </aside>
+    <!-- Sidebar ends here -->
+
+    <main>
+      <!-- Skills starts here -->
+      <section id="skills" class="text-center py-5">
+        <p class="lead text-uppercase title-color-2 fw-bold mb-0 mt-3">
+          my skills
+        </p>
+        <h1 class="display-5 fw-bold title-color mb-5">My Skill Set</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2 col-sm-4 mb-4 col-6">
+              <div class="box shadow-sm py-3">
+                <i class="fab icon fa-html5 html"></i>
+                <h6 class="text-muted">HTML</h6>
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-4 mb-4 col-6">
+              <div class="box shadow-sm py-3">
+                <i class="fab icon fa-css3-alt css"></i>
+                <h6 class="text-muted">CSS</h6>
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-4 mb-4 col-6">
+              <div class="box shadow-sm py-3">
+                <i class="fab icon fa-js-square js"></i>
+                <h6 class="text-muted">Javascript</h6>
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-4 mb-4 col-6">
+              <div class="box shadow-sm py-3">
+                <i class="fab icon fa-react react"></i>
+                <h6 class="text-muted">React.js</h6>
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-4 mb-4 col-6">
+              <div class="box shadow-sm py-3">
+                <i class="fab icon fa-vuejs vue"></i>
+                <h6 class="text-muted">Vue.js</h6>
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-4 mb-4 col-6">
+              <div class="box shadow-sm py-3">
+                <i class="fab icon fa-node-js node"></i>
+                <h6>Node.js</h6>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-5"></div>
+        </div>
+      </section>
+      <!-- Skills ends here -->
+
+      <section id="download-cv">
+        <div class="container">
+          <div class="row flex-lg-row flex-column-reverse">
+            <div
+              class="
+                col-lg-6
+                px-5
+                d-flex
+                py-lg-0 py-5
+                flex-column
+                text-center
+                justify-content-center
+                pt-0
+              "
+            >
+              <h4>Download my CV</h4>
+              <p class="lead text-muted">
+                To learn more about me you can also download my cv
+              </p>
+              <button
+                class="custom-btn custom-btn-primary custom-btn-small mx-auto"
+              >
+                Download CV
+              </button>
+            </div>
+            <div
+              class="
+                col-lg-6
+                px-5
+                d-flex
+                align-items-center
+                justify-content-center
+                py-lg-0 py-5
+              "
+            >
+              <img
+                class="img-fluid h-75"
+                src="src/assets/svg/undraw_Updated_resume_re_q1or.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects starts here -->
+      <section id="projects" class="text-center py-5">
+        <p class="lead text-uppercase title-color-2 fw-bold mb-0 mt-3">
+          Portfolio
+        </p>
+        <h1 class="display-5 fw-bold title-color mb-5">My Projects</h1>
+        <div class="container">
+          <div class="custom-card overflow-hidden" data-aos="fade-right">
+            <div class="custom-card-img">
+              <img src="src/assets/img/projects/p1.jpg" alt="p1" />
+            </div>
+            <div
+              class="
+                custom-card-body
+                p-4
+                pb-5
+                text-start
+                position-relative
+                d-flex
+                flex-column
+                justify-content-between
+              "
+            >
+              <div>
+                <h3 class="custom-card-title">Music player</h3>
+                <p class="custom-card-text text-muted fw-light">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque corporis non consequuntur autem eveniet iste.
+                </p>
+              </div>
+              <div class="card-buttons d-flex mb-4">
+                <button
+                  href="#"
+                  class="custom-btn custom-btn-light custom-btn-small me-3"
+                >
+                  Preview
+                  <i class="fas fa-external-link-alt"></i>
+                </button>
+                <button
+                  href="#"
+                  class="custom-btn custom-btn-dark custom-btn-small"
+                >
+                  GitHub
+                  <i class="fab fa-github"></i>
+                </button>
+              </div>
+              <div class="card-bottom position-absolute">
+                <div class="bar-group">
+                  <div class="bar mb-1">
+                    <div class="js"></div>
+                    <div class="html"></div>
+                    <div class="css"></div>
+                  </div>
+                  <div class="labels d-flex">
+                    <div class="js-group me-4">
+                      <div class="circle"></div>
+                      <span class="label text-muted"
+                        >Javascript <span class="label-per">(55%)</span></span
+                      >
+                    </div>
+                    <div class="html-group me-4">
+                      <div class="circle"></div>
+                      <span class="label text-muted"
+                        >Html <span class="label-per">(20%)</span>
+                      </span>
+                    </div>
+                    <div class="css-group">
+                      <div class="circle"></div>
+                      <span class="label text-muted"
+                        >Css <span class="label-per">(25%)</span></span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="custom-card overflow-hidden" data-aos="fade-left">
+            <div class="custom-card-img">
+              <img src="src/assets/img/projects/p2.jpg" alt="p1" />
+            </div>
+            <div
+              class="
+                custom-card-body
+                p-4
+                pb-5
+                text-start
+                position-relative
+                d-flex
+                flex-column
+                justify-content-between
+              "
+            >
+              <div>
+                <h3 class="custom-card-title">Music player</h3>
+                <p class="custom-card-text text-muted fw-light">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque corporis non consequuntur autem eveniet iste.
+                </p>
+              </div>
+              <div class="card-buttons d-flex mb-4">
+                <button
+                  href="#"
+                  class="custom-btn custom-btn-light custom-btn-small me-3"
+                >
+                  Preview
+                  <i class="fas fa-external-link-alt"></i>
+                </button>
+                <button
+                  href="#"
+                  class="custom-btn custom-btn-dark custom-btn-small"
+                >
+                  GitHub
+                  <i class="fab fa-github"></i>
+                </button>
+              </div>
+              <div class="card-bottom position-absolute">
+                <div class="bar-group">
+                  <div class="bar mb-1">
+                    <div class="js"></div>
+                    <div class="html"></div>
+                    <div class="css"></div>
+                  </div>
+                  <div class="labels d-flex">
+                    <div class="js-group me-4">
+                      <div class="circle"></div>
+                      <span class="label text-muted"
+                        >Javascript <span class="label-per">(55%)</span></span
+                      >
+                    </div>
+                    <div class="html-group me-4">
+                      <div class="circle"></div>
+                      <span class="label text-muted"
+                        >Html <span class="label-per">(20%)</span>
+                      </span>
+                    </div>
+                    <div class="css-group">
+                      <div class="circle"></div>
+                      <span class="label text-muted"
+                        >Css <span class="label-per">(25%)</span></span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="custom-card overflow-hidden mb-4" data-aos="fade-right">
+            <div class="custom-card-img">
+              <img src="src/assets/img/projects/p3.jpg" alt="p1" />
+            </div>
+            <div
+              class="
+                custom-card-body
+                p-4
+                pb-5
+                text-start
+                position-relative
+                d-flex
+                flex-column
+                justify-content-between
+              "
+            >
+              <div>
+                <h3 class="custom-card-title">Music player</h3>
+                <p class="custom-card-text text-muted fw-light">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque corporis non consequuntur autem eveniet iste.
+                </p>
+              </div>
+              <div class="card-buttons d-flex mb-4">
+                <button
+                  href="#"
+                  class="custom-btn custom-btn-light custom-btn-small me-3"
+                >
+                  Preview
+                  <i class="fas fa-external-link-alt"></i>
+                </button>
+                <button
+                  href="#"
+                  class="custom-btn custom-btn-dark custom-btn-small"
+                >
+                  GitHub
+                  <i class="fab fa-github"></i>
+                </button>
+              </div>
+              <div class="card-bottom position-absolute">
+                <div class="bar-group">
+                  <div class="bar mb-1">
+                    <div class="js"></div>
+                    <div class="html"></div>
+                    <div class="css"></div>
+                  </div>
+                  <div class="labels d-flex">
+                    <div class="js-group me-4">
+                      <div class="circle"></div>
+                      <span class="label text-muted"
+                        >Javascript <span class="label-per">(55%)</span></span
+                      >
+                    </div>
+                    <div class="html-group me-4">
+                      <div class="circle"></div>
+                      <span class="label text-muted"
+                        >Html <span class="label-per">(20%)</span>
+                      </span>
+                    </div>
+                    <div class="css-group">
+                      <div class="circle"></div>
+                      <span class="label text-muted"
+                        >Css <span class="label-per">(25%)</span></span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Projects ends here -->
+
+      <!-- About starts here -->
+      <section id="about" class="py-5">
+        <div class="container py-5">
+          <p class="lead text-uppercase title-color-2 fw-bold mb-3 mt-3">
+            nice to meet you
+          </p>
+          <h1 class="title-color display-5 mb-3 fw-bold">
+            Hey, I'm Cihan, <br />
+            junior front-end developer
+          </h1>
+          <p class="lead text-muted">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
+            doloribus sequi labore! Expedita, aspernatur aut illo velit, minima
+            labore quis, suscipit aliquam commodi inventore earum! Asperiores et
+            voluptatem adipisci aliquam deserunt hic velit eos sunt, mollitia
+            officia rerum, nesciunt itaque harum delectus obcaecati ducimus
+            provident natus eligendi, nostrum ex voluptas?
+          </p>
+          <div class="person d-flex">
+            <div class="person-img-wrap overflow-hidden">
+              <img
+                class="img-fluid"
+                src="src/assets/img/1light-sm.png"
+                alt="Cihan Erenler"
+              />
+            </div>
+            <div
+              class="
+                d-flex
+                align-items-start
+                flex-column
+                justify-content-center
+                ps-3
+              "
+            >
+              <h5 class="mb-0 title-color" style="font-size: 18px">
+                Cihan Erenler
+              </h5>
+              <p class="mb-0 title-color-2" style="font-size: 14px">
+                Junior front-end developer
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About ends here -->
+
+      <!-- Contact form starts here -->
+      <section id="contact" class="text-center py-5">
+        <div class="container my-5">
+          <div class="card bg-white p-lg-5 p-3 pb-5 rounded">
+            <div class="row">
+              <div class="col-lg-6 form-wrap">
+                <p class="lead text-uppercase title-color-2 fw-bold mb-0 mt-3">
+                  email me
+                </p>
+                <h1 class="display-5 fw-bold title-color mb-5">Contact</h1>
+                <form class="form">
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="email"
+                      placeholder="Your name"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Your email"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <textarea
+                      class="form-control"
+                      id="exampleFormControlTextarea1"
+                      rows="3"
+                      placeholder="Your message"
+                    ></textarea>
+                  </div>
+                  <button
+                    class="
+                      custom-btn
+                      custom-btn-primary
+                      custom-btn-small
+                      custom-btn-full
+                    "
+                  >
+                    Send
+                  </button>
+                </form>
+              </div>
+              <div
+                class="
+                  col-lg-6
+                  d-lg-flex
+                  align-items-center
+                  justify-content-center
+                  d-none
+                "
+              >
+                <img
+                  class="img-fluid h-75"
+                  src="src/assets/svg/mailbox.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="src/js/bootstrap.js"></script>
+    <script src="src/js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
