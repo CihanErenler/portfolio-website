@@ -66,7 +66,6 @@ function erase() {
 window.addEventListener("load", type);
 
 // Scroll
-
 window.onscroll = function () {
   handleScroll();
 };

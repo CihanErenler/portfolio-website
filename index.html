@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="src/css/bootstrap.css" />
     <link rel="stylesheet" href="src/css/style.css" />
     <title>Cihan Erenler | Portfolio Website</title>
+    <link rel="shortcut icon" href="src/assets/fav.png" type="image/x-icon" />
   </head>
   <body id="home">
     <!-- Hamburger button starts here -->
@@ -35,7 +36,7 @@
         <div class="container">
           <a href="#">
             <h1 id="logo" class="fw-bold secondary mb-0 h2">
-              <span class="primary">.</span>CE
+              <span class="primary me-1 mt-1 d-inline-block">&#11044;</span>CE
             </h1>
           </a>
           <div
@@ -167,7 +168,7 @@
     </aside>
     <!-- Sidebar ends here -->
 
-    <main>
+    <main id="main">
       <!-- Skills starts here -->
       <section id="skills" class="text-center py-5">
         <p class="lead text-uppercase title-color-2 fw-bold mb-0 mt-3">
@@ -176,40 +177,14 @@
         <h1 class="display-5 fw-bold title-color mb-5">My Skill Set</h1>
         <div class="container">
           <div class="row">
-            <div class="col-lg-2 col-sm-4 mb-4 col-6">
+            <div
+              v-for="skill in skillsData"
+              :key="skill.id"
+              class="col-lg-2 col-sm-4 mb-4 col-6"
+            >
               <div class="box shadow-sm py-3">
-                <i class="fab icon fa-html5 html"></i>
-                <h6 class="text-muted">HTML</h6>
-              </div>
-            </div>
-            <div class="col-lg-2 col-sm-4 mb-4 col-6">
-              <div class="box shadow-sm py-3">
-                <i class="fab icon fa-css3-alt css"></i>
-                <h6 class="text-muted">CSS</h6>
-              </div>
-            </div>
-            <div class="col-lg-2 col-sm-4 mb-4 col-6">
-              <div class="box shadow-sm py-3">
-                <i class="fab icon fa-js-square js"></i>
-                <h6 class="text-muted">Javascript</h6>
-              </div>
-            </div>
-            <div class="col-lg-2 col-sm-4 mb-4 col-6">
-              <div class="box shadow-sm py-3">
-                <i class="fab icon fa-react react"></i>
-                <h6 class="text-muted">React.js</h6>
-              </div>
-            </div>
-            <div class="col-lg-2 col-sm-4 mb-4 col-6">
-              <div class="box shadow-sm py-3">
-                <i class="fab icon fa-vuejs vue"></i>
-                <h6 class="text-muted">Vue.js</h6>
-              </div>
-            </div>
-            <div class="col-lg-2 col-sm-4 mb-4 col-6">
-              <div class="box shadow-sm py-3">
-                <i class="fab icon fa-node-js node"></i>
-                <h6>Node.js</h6>
+                <i :class="skill.icon"></i>
+                <h6 class="text-muted">{{skill.desc}}</h6>
               </div>
             </div>
           </div>
@@ -270,9 +245,14 @@
         </p>
         <h1 class="display-5 fw-bold title-color mb-5">My Projects</h1>
         <div class="container">
-          <div class="custom-card overflow-hidden" data-aos="fade-right">
+          <div
+            v-for="project in projectsData"
+            :key="project.id"
+            class="custom-card overflow-hidden"
+            data-aos="fade-right"
+          >
             <div class="custom-card-img">
-              <img src="src/assets/img/projects/p1.jpg" alt="p1" />
+              <img :src="project.img" :alt="project.title" />
             </div>
             <div
               class="
@@ -287,192 +267,47 @@
               "
             >
               <div>
-                <h3 class="custom-card-title">Music player</h3>
+                <h3 class="custom-card-title">{{project.title}}</h3>
                 <p class="custom-card-text text-muted fw-light">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Cumque corporis non consequuntur autem eveniet iste.
+                  {{project.desc}}
                 </p>
               </div>
               <div class="card-buttons d-flex mb-4">
-                <button
-                  href="#"
+                <a
+                  :href="project.preview"
                   class="custom-btn custom-btn-light custom-btn-small me-3"
+                  target="_blank"
                 >
                   Preview
                   <i class="fas fa-external-link-alt"></i>
-                </button>
-                <button
-                  href="#"
+                </a>
+                <a
+                  :href="project.github"
                   class="custom-btn custom-btn-dark custom-btn-small"
+                  target="_blank"
                 >
                   GitHub
                   <i class="fab fa-github"></i>
-                </button>
+                </a>
               </div>
               <div class="card-bottom position-absolute">
                 <div class="bar-group">
                   <div class="bar mb-1">
-                    <div class="js"></div>
-                    <div class="html"></div>
-                    <div class="css"></div>
+                    <div
+                      v-for="lang in project.languages"
+                      :class="lang.lang"
+                    ></div>
                   </div>
                   <div class="labels d-flex">
-                    <div class="js-group me-4">
-                      <div class="circle"></div>
-                      <span class="label text-muted"
-                        >Javascript <span class="label-per">(55%)</span></span
-                      >
-                    </div>
-                    <div class="html-group me-4">
-                      <div class="circle"></div>
-                      <span class="label text-muted"
-                        >Html <span class="label-per">(20%)</span>
-                      </span>
-                    </div>
-                    <div class="css-group">
-                      <div class="circle"></div>
-                      <span class="label text-muted"
-                        >Css <span class="label-per">(25%)</span></span
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="custom-card overflow-hidden" data-aos="fade-left">
-            <div class="custom-card-img">
-              <img src="src/assets/img/projects/p2.jpg" alt="p1" />
-            </div>
-            <div
-              class="
-                custom-card-body
-                p-4
-                pb-5
-                text-start
-                position-relative
-                d-flex
-                flex-column
-                justify-content-between
-              "
-            >
-              <div>
-                <h3 class="custom-card-title">Music player</h3>
-                <p class="custom-card-text text-muted fw-light">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Cumque corporis non consequuntur autem eveniet iste.
-                </p>
-              </div>
-              <div class="card-buttons d-flex mb-4">
-                <button
-                  href="#"
-                  class="custom-btn custom-btn-light custom-btn-small me-3"
-                >
-                  Preview
-                  <i class="fas fa-external-link-alt"></i>
-                </button>
-                <button
-                  href="#"
-                  class="custom-btn custom-btn-dark custom-btn-small"
-                >
-                  GitHub
-                  <i class="fab fa-github"></i>
-                </button>
-              </div>
-              <div class="card-bottom position-absolute">
-                <div class="bar-group">
-                  <div class="bar mb-1">
-                    <div class="js"></div>
-                    <div class="html"></div>
-                    <div class="css"></div>
-                  </div>
-                  <div class="labels d-flex">
-                    <div class="js-group me-4">
-                      <div class="circle"></div>
-                      <span class="label text-muted"
-                        >Javascript <span class="label-per">(55%)</span></span
-                      >
-                    </div>
-                    <div class="html-group me-4">
-                      <div class="circle"></div>
-                      <span class="label text-muted"
-                        >Html <span class="label-per">(20%)</span>
-                      </span>
-                    </div>
-                    <div class="css-group">
-                      <div class="circle"></div>
-                      <span class="label text-muted"
-                        >Css <span class="label-per">(25%)</span></span
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="custom-card overflow-hidden mb-4" data-aos="fade-right">
-            <div class="custom-card-img">
-              <img src="src/assets/img/projects/p3.jpg" alt="p1" />
-            </div>
-            <div
-              class="
-                custom-card-body
-                p-4
-                pb-5
-                text-start
-                position-relative
-                d-flex
-                flex-column
-                justify-content-between
-              "
-            >
-              <div>
-                <h3 class="custom-card-title">Music player</h3>
-                <p class="custom-card-text text-muted fw-light">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Cumque corporis non consequuntur autem eveniet iste.
-                </p>
-              </div>
-              <div class="card-buttons d-flex mb-4">
-                <button
-                  href="#"
-                  class="custom-btn custom-btn-light custom-btn-small me-3"
-                >
-                  Preview
-                  <i class="fas fa-external-link-alt"></i>
-                </button>
-                <button
-                  href="#"
-                  class="custom-btn custom-btn-dark custom-btn-small"
-                >
-                  GitHub
-                  <i class="fab fa-github"></i>
-                </button>
-              </div>
-              <div class="card-bottom position-absolute">
-                <div class="bar-group">
-                  <div class="bar mb-1">
-                    <div class="js"></div>
-                    <div class="html"></div>
-                    <div class="css"></div>
-                  </div>
-                  <div class="labels d-flex">
-                    <div class="js-group me-4">
-                      <div class="circle"></div>
-                      <span class="label text-muted"
-                        >Javascript <span class="label-per">(55%)</span></span
-                      >
-                    </div>
-                    <div class="html-group me-4">
-                      <div class="circle"></div>
-                      <span class="label text-muted"
-                        >Html <span class="label-per">(20%)</span>
-                      </span>
-                    </div>
-                    <div class="css-group">
-                      <div class="circle"></div>
-                      <span class="label text-muted"
-                        >Css <span class="label-per">(25%)</span></span
+                    <div
+                      v-for="lang in project.languages"
+                      class="me-4"
+                      :class="lang.class"
+                    >
+                      <div class="circle me-1"></div>
+                      <span class="label text-muted text-capitalize"
+                        >{{lang.lang}}
+                        <span class="label-per">({{lang.per}}%)</span></span
                       >
                     </div>
                   </div>
@@ -602,8 +437,15 @@
       <!-- Footer starts here -->
       <footer id="main-footer" class="bg-dark py-4">
         <div>
-          <div class="social-links d-flex align-items-center justify-content-center">
-            <a href="#">
+          <div
+            class="
+              social-links
+              d-flex
+              align-items-center
+              justify-content-center
+            "
+          >
+            <a href="https://www.linkedin.com/in/cihanerenler/" target="_blank">
               <i class="fab fa-linkedin-in mx-2 text-light"></i>
             </a>
             <a href="#">
@@ -615,10 +457,14 @@
           </div>
         </div>
         <p class="text-center text-muted mb-1">&copy; 2021 Copyright</p>
-        <p class="text-muted text-center mb-0">Made by <a class="primary" href="#">Cihan Erenler</a></p>
+        <p class="text-muted text-center mb-0">
+          Made by <a class="primary" href="#">Cihan Erenler</a>
+        </p>
       </footer>
     </main>
 
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="src/js/vue.js" type="module"></script>
     <script src="src/js/bootstrap.js"></script>
     <script src="src/js/index.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
