@@ -15,6 +15,7 @@ export const projects = [
     img: "src/assets/img/projects/p1.jpg",
     github: "https://www.github.com",
     preview: "https://www.google.com",
+    fade: "fade-right",
     languages: [
       { lang: "js", class: "js-group", per: 48 },
       { lang: "html", class: "html-group", per: 30 },
@@ -28,6 +29,7 @@ export const projects = [
     img: "src/assets/img/projects/p2.jpg",
     github: "https://www.github.com",
     preview: "https://www.google.com",
+    fade: "fade-left",
     languages: [
       { lang: "js", class: "js-group", per: 60 },
       { lang: "html", class: "html-group", per: 30 },
@@ -41,20 +43,11 @@ export const projects = [
     img: "src/assets/img/projects/p3.jpg",
     github: "https://www.github.com",
     preview: "https://www.google.com",
+    fade: "fade-right",
     languages: [
-      { lang: "js", class: "js-group", per: 48 },
-      { lang: "html", class: "html-group", per: 30 },
-      { lang: "css", class: "css-group", per: 22 },
+      { lang: "js", class: "js-group", per: 13 },
+      { lang: "html", class: "html-group", per: 40 },
+      { lang: "css", class: "css-group", per: 47 },
     ],
   },
 ];
-
-// export const links = [
-//   [
-//     { id: 1, _id: "#home", text: "Home" },
-//     { id: 2, _id: "#skills", text: "Skills" },
-//     { id: 3, _id: "#projects", text: "Projects" },
-//     { id: 4, _id: "#about", text: "About" },
-//     { id: 5, _id: "#contact", text: "Contact" },
-//   ],
-// ];

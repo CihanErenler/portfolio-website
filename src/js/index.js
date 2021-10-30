@@ -4,6 +4,7 @@ const typing = document.querySelector(".typing");
 const hamburger = document.querySelector(".ham");
 const navbar = document.querySelector(".primary-navbar");
 const sideWrap = document.querySelector(".side-wrapper");
+const bars = document.querySelectorAll(".bar");
 
 // Open sidebar
 toggle.addEventListener("click", showSidebar);
@@ -63,7 +64,24 @@ function erase() {
   }
 }
 
-window.addEventListener("load", type);
+window.addEventListener("load", loadFunctions);
+
+// Function that gets called when the page is loaded
+function loadFunctions() {
+  type();
+  calcPer();
+}
+
+// Calculate percentage
+function calcPer() {
+  const barArr = Array.from(bars);
+  barArr.forEach((item) => {
+    item.querySelectorAll("div").forEach((i) => {
+      const val = i.getAttribute("data-per");
+      i.style.width = val + "%";
+    });
+  });
+}
 
 // Scroll
 window.onscroll = function () {

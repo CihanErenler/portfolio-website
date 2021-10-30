@@ -249,7 +249,7 @@
             v-for="project in projectsData"
             :key="project.id"
             class="custom-card overflow-hidden"
-            data-aos="fade-right"
+            :data-aos="project.fade"
           >
             <div class="custom-card-img">
               <img :src="project.img" :alt="project.title" />
@@ -296,6 +296,7 @@
                     <div
                       v-for="lang in project.languages"
                       :class="lang.lang"
+                      :data-per="lang.per"
                     ></div>
                   </div>
                   <div class="labels d-flex">
@@ -466,7 +467,7 @@
     <script src="https://unpkg.com/vue@next"></script>
     <script src="src/js/vue.js" type="module"></script>
     <script src="src/js/bootstrap.js"></script>
-    <script src="src/js/index.js"></script>
+    <script src="src/js/index.js" defer></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
