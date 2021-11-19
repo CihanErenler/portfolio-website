@@ -51,3 +51,13 @@ export const projects = [
     ],
   },
 ];
+
+// export const links = [
+//   [
+//     { id: 1, _id: "#home", text: "Home" },
+//     { id: 2, _id: "#skills", text: "Skills" },
+//     { id: 3, _id: "#projects", text: "Projects" },
+//     { id: 4, _id: "#about", text: "About" },
+//     { id: 5, _id: "#contact", text: "Contact" },
+//   ],
+// ];
