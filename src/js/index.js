@@ -113,6 +113,8 @@ form.addEventListener("submit", (e) => {
     if (field.value === "") {
       error.push("error");
       field.classList.add("is-invalid");
+    } else {
+      field.classList.remove("is-invalid");
     }
   });
 
