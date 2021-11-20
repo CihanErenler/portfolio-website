@@ -383,7 +383,7 @@
                   email me
                 </p>
                 <h1 class="display-5 fw-bold title-color mb-5">Contact</h1>
-                <form method="POST" name="contact" class="form" data-netlify="true">
+                <form method="POST" name="contact" class="form" data-netlify="true" action="/success.html">
                   <div class="mb-3">
                     <input
                       type="text"
@@ -392,6 +392,9 @@
                       name="name"
                       placeholder="Your name"
                     />
+                    <div class="invalid-feedback">
+                      Please enter your name.
+                    </div>
                   </div>
                   <div class="mb-3">
                     <input
@@ -401,6 +404,9 @@
                       name="email"
                       placeholder="Your email"
                     />
+                    <div class="invalid-feedback">
+                      Please enter your email.
+                    </div>
                   </div>
                   <div class="mb-3">
                     <textarea
@@ -410,8 +416,10 @@
                       name="message"
                       placeholder="Your message"
                     ></textarea>
+                    <div class="invalid-feedback">
+                      Please enter a message in the textarea.
+                    </div>
                   </div>
-                  <div data-netlify-recaptcha="true"></div>
                   <button
                     type="submit"
                     class="
@@ -475,6 +483,7 @@
       </footer>
     </main>
 
+    <!-- Scripts -->
     <script src="https://unpkg.com/vue@next"></script>
     <script src="src/js/vue.js" type="module" ></script>
     <script src="src/js/bootstrap.js"></script>

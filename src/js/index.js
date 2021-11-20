@@ -5,6 +5,8 @@ const hamburger = document.querySelector(".ham");
 const navbar = document.querySelector(".primary-navbar");
 const sideWrap = document.querySelector(".side-wrapper");
 const bars = document.querySelectorAll(".bar");
+const form = document.querySelector(".form");
+const fields = document.querySelectorAll(".form-control");
 
 // Open sidebar
 toggle.addEventListener("click", showSidebar);
@@ -101,3 +103,20 @@ function handleScroll() {
     hamburger.style.top = "20px";
   }
 }
+
+// Form valitadion
+
+form.addEventListener("submit", (e) => {
+  const error = [];
+
+  fields.forEach((field) => {
+    if (field.value === "") {
+      error.push("error");
+      field.classList.add("is-invalid");
+    }
+  });
+
+  if (error.length > 0) {
+    e.preventDefault();
+  }
+});
