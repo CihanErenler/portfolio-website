@@ -41,7 +41,7 @@ export const projects = [
   {
     id: 3,
     title: "Weather App",
-    desc: "An app which you can search cities for the real time weather. You can get the informations such as temperture, humidity and pressure.",
+    desc: "An app which you can search cities for the real time weather conditions. You can get the informations such as temperture, humidity and pressure.",
     img: "src/assets/img/projects/project-3.jpg",
     github: "https://github.com/CihanErenler/weatherApp",
     preview: "https://cihanweatherapp.netlify.app/",
