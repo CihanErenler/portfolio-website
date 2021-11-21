@@ -256,16 +256,21 @@
           <div
             v-for="project in projectsData"
             :key="project.id"
-            class="custom-card overflow-hidden"
+            class="custom-card overflow-hidden "
             :data-aos="project.fade"
           >
-            <div class="custom-card-img">
-              <img :src="project.img" :alt="project.title" />
+            <div class="custom-card-img col-lg-4 position-relative">
+              <img class="img-fluid p-0" :src="project.img" :alt="project.title" />
+              <div v-if="project.react" class="react-project position-absolute">
+                <i class="fab fa-react"></i>
+                React project
+              </div>
             </div>
             <div
               class="
                 custom-card-body
-                p-4
+                col-lg-8
+                p-3
                 pb-5
                 text-start
                 position-relative
@@ -310,13 +315,13 @@
                   <div class="labels d-flex">
                     <div
                       v-for="lang in project.languages"
-                      class="me-4"
+                      class="me-sm-4 me-3"
                       :class="lang.class"
                     >
                       <div class="circle me-1"></div>
                       <span class="label text-muted text-capitalize"
                         >{{lang.lang}}
-                        <span class="label-per">({{lang.per}}%)</span></span
+                        <span class="label-per ">({{lang.per}}%)</span></span
                       >
                     </div>
                   </div>
@@ -339,12 +344,11 @@
             junior front-end developer
           </h1>
           <p class="lead text-muted">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
-            doloribus sequi labore! Expedita, aspernatur aut illo velit, minima
-            labore quis, suscipit aliquam commodi inventore earum! Asperiores et
-            voluptatem adipisci aliquam deserunt hic velit eos sunt, mollitia
-            officia rerum, nesciunt itaque harum delectus obcaecati ducimus
-            provident natus eligendi, nostrum ex voluptas?
+          I am a junior front-end developer who is currently a second-year IT
+          student at HAMK, in Finland. I am proficient in HTML, CSS,
+          JavaScript and React. In addition, I have experience working with
+          Vue.js and Node.js. I have studied and graduated as an art teacher
+          from my prior education, where I honed my graphic design skills.
           </p>
           <div class="person d-flex">
             <div class="person-img-wrap overflow-hidden">

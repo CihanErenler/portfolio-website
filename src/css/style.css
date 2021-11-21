@@ -398,7 +398,30 @@ ul {
 }
 
 .custom-card-image {
-  width: 200px;
+  width: 400px !important;
+  padding: 0 !important;
+}
+
+.custom-card-img .react-project{
+  right: 20px !important;
+  bottom: 20px !important;
+  background: rgba(0,0,0,.5);
+  z-index: 20;
+  width: 160px;
+  height: 30px;
+  border-radius: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  padding: 0 22px;
+  color: var(--react);
+}
+
+.custom-card-img .react-project i{
+  font-size: 22px;
+  animation: spin 10s linear infinite;
+  margin-right: 5px;
 }
 
 .custom-card-img img {
@@ -409,6 +432,7 @@ ul {
 
 .custom-card-text {
   font-size: 18px;
+  width: 100%;
 }
 
 .card-bottom {
