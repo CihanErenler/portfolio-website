@@ -11,7 +11,7 @@ export const projects = [
   {
     id: 1,
     title: "Stripe Landing Page Clone",
-    desc: "This is a react project which I have builded the Stripe's landing page from scratch. The main intetion was to replicate the same transition effect while hovering over the navigation links.",
+    desc: "This is a react project in which I have built Stripe's landing page from scratch. The main intention was to replicate the same transition effect while hovering over the navigation links.",
     img: "src/assets/img/projects/project-1.jpg",
     github: "https://github.com/CihanErenler/react-stripe-clone",
     preview: "https://react-stripe-clone.netlify.app/",
@@ -26,7 +26,7 @@ export const projects = [
   {
     id: 2,
     title: "Color Generator",
-    desc: "This is a react tool that allows you to generate tints and shades from the color that you pick. It also allows you to copy any color that generated.",
+    desc: "This react tool allows you to generate tints and shades from the color you pick. It also allows you to copy any color that is generated.",
     img: "src/assets/img/projects/project-2.jpg",
     github: "https://github.com/CihanErenler/react-color-generator",
     preview: "https://c-react-color-generator.netlify.app/",
