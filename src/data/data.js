@@ -15,7 +15,6 @@ export const projects = [
     img: "src/assets/img/projects/project-4.jpg",
     github: "https://github.com/CihanErenler/react-movie-app",
     preview: "https://cihan-react-movieapp.netlify.app/",
-    fade: "fade-right",
     react: true,
     languages: [
       { lang: "js", class: "js-group", per: 65.1 },
@@ -30,7 +29,6 @@ export const projects = [
     img: "src/assets/img/projects/project-2.jpg",
     github: "https://github.com/CihanErenler/react-color-generator",
     preview: "https://c-react-color-generator.netlify.app/",
-    fade: "fade-left",
     react: true,
     languages: [
       { lang: "js", class: "js-group", per: 52.6 },
@@ -45,7 +43,6 @@ export const projects = [
     img: "src/assets/img/projects/project-1.jpg",
     github: "https://github.com/CihanErenler/react-stripe-clone",
     preview: "https://react-stripe-clone.netlify.app/",
-    fade: "fade-right",
     react: true,
     languages: [
       { lang: "js", class: "js-group", per: 57.3 },
@@ -60,7 +57,6 @@ export const projects = [
     img: "src/assets/img/projects/project-3.jpg",
     github: "https://github.com/CihanErenler/weatherApp",
     preview: "https://cihanweatherapp.netlify.app/",
-    fade: "fade-right",
     react: false,
     languages: [
       { lang: "js", class: "js-group", per: 55.4 },
