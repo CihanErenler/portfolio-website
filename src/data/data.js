@@ -10,17 +10,17 @@ export const skills = [
 export const projects = [
   {
     id: 1,
-    title: "Stripe Landing Page Clone",
-    desc: "This is a react project in which I have built Stripe's landing page from scratch. The main intention was to replicate the same transition effect while hovering over the navigation links.",
-    img: "src/assets/img/projects/project-1.jpg",
-    github: "https://github.com/CihanErenler/react-stripe-clone",
-    preview: "https://react-stripe-clone.netlify.app/",
+    title: "Movie Search App",
+    desc: "An app that allows users to display trending movies & tv shows, the films are being shown at the theater at the moment, indicating specific movie details and searching movies by query",
+    img: "src/assets/img/projects/project-4.jpg",
+    github: "https://github.com/CihanErenler/react-movie-app",
+    preview: "https://cihan-react-movieapp.netlify.app/",
     fade: "fade-right",
     react: true,
     languages: [
-      { lang: "js", class: "js-group", per: 57.3 },
-      { lang: "html", class: "html-group", per: 9.3 },
-      { lang: "css", class: "css-group", per: 33.4 },
+      { lang: "js", class: "js-group", per: 65.1 },
+      { lang: "html", class: "html-group", per: 4.3 },
+      { lang: "css", class: "css-group", per: 30.6 },
     ],
   },
   {
@@ -40,6 +40,21 @@ export const projects = [
   },
   {
     id: 3,
+    title: "Stripe Landing Page Clone",
+    desc: "This is a react project in which I have built Stripe's landing page from scratch. The main intention was to replicate the same transition effect while hovering over the navigation links.",
+    img: "src/assets/img/projects/project-1.jpg",
+    github: "https://github.com/CihanErenler/react-stripe-clone",
+    preview: "https://react-stripe-clone.netlify.app/",
+    fade: "fade-right",
+    react: true,
+    languages: [
+      { lang: "js", class: "js-group", per: 57.3 },
+      { lang: "html", class: "html-group", per: 9.3 },
+      { lang: "css", class: "css-group", per: 33.4 },
+    ],
+  },
+  {
+    id: 4,
     title: "Weather App",
     desc: "An app which you can search cities for the real time weather conditions. You can get the informations such as temperture, humidity and pressure.",
     img: "src/assets/img/projects/project-3.jpg",
