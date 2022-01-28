@@ -13,7 +13,7 @@ export const projects = [
     title: "E-commerce Website",
     desc: "An e-commerce website where user can filter available products through brand, color, price etc. User can preview single product and add to cart. Project was builted with React and Tailwind css",
     img: "src/assets/img/projects/e-commerce.jpg",
-    github: "hhttps://github.com/CihanErenler/react-e-commerce",
+    github: "https://github.com/CihanErenler/react-e-commerce",
     preview: "https://hanci.netlify.app/",
     react: true,
     languages: [
