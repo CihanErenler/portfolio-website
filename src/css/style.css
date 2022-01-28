@@ -228,7 +228,7 @@ ul {
 }
 
 /* Typing Effect */
-.typing::after {
+/* .typing::after {
   content: "";
   display: inline-block;
   margin-left: 3px;
@@ -242,7 +242,7 @@ ul {
   100% {
     opacity: 0;
   }
-}
+} */
 
 /* Hamburger */
 .ham.active > .ham-bar {

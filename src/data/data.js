@@ -10,6 +10,20 @@ export const skills = [
 export const projects = [
   {
     id: 1,
+    title: "E-commerce Website",
+    desc: "An e-commerce website where user can filter available products through brand, color, price etc. User can preview single product and add to cart. Project was builted with React and Tailwind css",
+    img: "src/assets/img/projects/e-commerce.jpg",
+    github: "hhttps://github.com/CihanErenler/react-e-commerce",
+    preview: "https://hanci.netlify.app/",
+    react: true,
+    languages: [
+      { lang: "js", class: "js-group", per: 94.9 },
+      { lang: "html", class: "html-group", per: 2.8 },
+      { lang: "css", class: "css-group", per: 2.3 },
+    ],
+  },
+  {
+    id: 2,
     title: "Movie Search App",
     desc: "An app that allows users to display trending movies & tv shows, the films are being shown at the theater at the moment, indicating specific movie details and searching movies by query",
     img: "src/assets/img/projects/project-4.jpg",
@@ -23,7 +37,7 @@ export const projects = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: "Color Generator",
     desc: "This react tool allows you to generate tints and shades from the color you pick. It also allows you to copy any color that is generated.",
     img: "src/assets/img/projects/project-2.jpg",
@@ -37,7 +51,7 @@ export const projects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "Stripe Landing Page Clone",
     desc: "This is a react project in which I have built Stripe's landing page from scratch. The main intention was to replicate the same transition effect while hovering over the navigation links.",
     img: "src/assets/img/projects/project-1.jpg",
@@ -51,7 +65,7 @@ export const projects = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "Weather App",
     desc: "An app which you can search cities for the real time weather conditions. You can get the informations such as temperture, humidity and pressure.",
     img: "src/assets/img/projects/project-3.jpg",

@@ -40,37 +40,37 @@ const typingSpeed = 100;
 const deleteSpeed = 50;
 const waitingTime = 2000;
 
-function type() {
-  if (text_index < textArray[textArray_index].length) {
-    typing.textContent += textArray[textArray_index].charAt(text_index);
-    text_index++;
-    setTimeout(type, typingSpeed);
-  } else {
-    setTimeout(erase, waitingTime);
-  }
-}
+// function type() {
+//   if (text_index < textArray[textArray_index].length) {
+//     typing.textContent += textArray[textArray_index].charAt(text_index);
+//     text_index++;
+//     setTimeout(type, typingSpeed);
+//   } else {
+//     setTimeout(erase, waitingTime);
+//   }
+// }
 
-function erase() {
-  if (text_index > 0) {
-    text_index--;
-    const value = typing.textContent;
-    typing.textContent = value.slice(0, text_index);
-    setTimeout(erase, deleteSpeed);
-  } else {
-    if (textArray_index + 1 === textArray.length) {
-      textArray_index = 0;
-    } else {
-      textArray_index++;
-    }
-    setTimeout(type, 100);
-  }
-}
+// function erase() {
+//   if (text_index > 0) {
+//     text_index--;
+//     const value = typing.textContent;
+//     typing.textContent = value.slice(0, text_index);
+//     setTimeout(erase, deleteSpeed);
+//   } else {
+//     if (textArray_index + 1 === textArray.length) {
+//       textArray_index = 0;
+//     } else {
+//       textArray_index++;
+//     }
+//     setTimeout(type, 100);
+//   }
+// }
 
 window.addEventListener("load", loadFunctions);
 
 // Function that gets called when the page is loaded
 function loadFunctions() {
-  type();
+  // type();
   calcPer();
 }
 

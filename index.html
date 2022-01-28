@@ -9,7 +9,10 @@
       name="keywords"
       content="Cihan Erenler, Web Developer, Front-end developer, Html, Css, Js, Javascript, React, React.js, Vue, Vue.js, Node, Node.js"
     />
-    <meta name="description" content="Cihan Erenler personal website. This is a place where you can find my projects and informations about me." />
+    <meta
+      name="description"
+      content="Cihan Erenler personal website. This is a place where you can find my projects and informations about me."
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -45,17 +48,7 @@
             </h1>
           </a>
           <div
-            class="
-              custom-nav
-              d-flex
-              text-center
-              align-items-center
-              h-100
-              mb-0
-              fw-normal
-              d-none d-lg-flex
-              ps-0
-            "
+            class="custom-nav d-flex text-center align-items-center h-100 mb-0 fw-normal d-none d-lg-flex ps-0"
           >
             <li class="custom-nav-item">
               <a href="#home" class="custom-nav-link">Home</a>
@@ -92,41 +85,24 @@
       <section id="showcase">
         <div class="container h-100 d-flex">
           <div
-            class="
-              row
-              flex-lg-row
-              justify-content-lg-start
-              flex-column-reverse
-              justify-content-center
-            "
+            class="row flex-lg-row justify-content-lg-start flex-column-reverse justify-content-center"
           >
             <div
-              class="
-                showcase-content
-                col-lg-6
-                d-flex
-                flex-column
-                align-items-center align-items-lg-start
-                justify-content-center
-                mt-lg-0 mt-sm-5
-                text-center text-lg-start
-              "
+              class="showcase-content col-lg-6 d-flex flex-column align-items-center align-items-lg-start justify-content-center mt-lg-0 mt-sm-5 text-center text-lg-start"
             >
               <h1 class="display-2 fw-bold secondary">
                 Hey, <br />
                 I'm<span class="primary"> Cihan Erenler</span>
               </h1>
               <p class="lead text-muted fw-normal fs-3">
-                I am
+                I am a junior front-end developer
                 <span class="typing"></span>
               </p>
               <a href="#projects" class="custom-btn custom-btn-primary">
                 See my projects
               </a>
             </div>
-            <div
-              class="showcase-image col-lg-6 d-flex align-items-center"
-            >
+            <div class="showcase-image col-lg-6 d-flex align-items-center">
               <div class="img-outer position-relative mb-3">
                 <img
                   class="position-absolute dots d-none d-lg-block"
@@ -200,22 +176,13 @@
         <div class="container">
           <div class="row flex-lg-row flex-column-reverse">
             <div
-              class="
-                col-lg-6
-                px-5
-                d-flex
-                py-lg-0 py-5
-                flex-column
-                text-center
-                justify-content-center
-                pt-0
-              "
+              class="col-lg-6 px-5 d-flex py-lg-0 py-5 flex-column text-center justify-content-center pt-0"
             >
               <h4>Download my CV</h4>
               <p class="lead text-muted">
                 To learn more about me you can also download my cv
               </p>
-              <a 
+              <a
                 href="src/assets/cv/Cihan Erenler Cv.pdf"
                 class="custom-btn custom-btn-primary custom-btn-small mx-auto"
                 download="Cihan Erenler CV"
@@ -224,14 +191,7 @@
               </a>
             </div>
             <div
-              class="
-                col-lg-6
-                px-5
-                d-flex
-                align-items-center
-                justify-content-center
-                py-lg-0 py-5
-              "
+              class="col-lg-6 px-5 d-flex align-items-center justify-content-center py-lg-0 py-5"
             >
               <img
                 class="img-fluid h-75"
@@ -253,27 +213,21 @@
           <div
             v-for="project in projectsData"
             :key="project.id"
-            class="custom-card overflow-hidden "
+            class="custom-card overflow-hidden"
           >
             <div class="custom-card-img col-lg-4 position-relative">
-              <img class="img-fluid p-0" :src="project.img" :alt="project.title" />
+              <img
+                class="img-fluid p-0"
+                :src="project.img"
+                :alt="project.title"
+              />
               <div v-if="project.react" class="react-project position-absolute">
                 <i class="fab fa-react"></i>
                 React project
               </div>
             </div>
             <div
-              class="
-                custom-card-body
-                col-lg-8
-                p-3
-                pb-5
-                text-start
-                position-relative
-                d-flex
-                flex-column
-                justify-content-between
-              "
+              class="custom-card-body col-lg-8 p-3 pb-5 text-start position-relative d-flex flex-column justify-content-between"
             >
               <div>
                 <h3 class="custom-card-title">{{project.title}}</h3>
@@ -317,7 +271,7 @@
                       <div class="circle me-1"></div>
                       <span class="label text-muted text-capitalize"
                         >{{lang.lang}}
-                        <span class="label-per ">({{lang.per}}%)</span></span
+                        <span class="label-per">({{lang.per}}%)</span></span
                       >
                     </div>
                   </div>
@@ -340,11 +294,11 @@
             junior front-end developer
           </h1>
           <p class="lead text-muted">
-          I am a junior front-end developer who is currently a second-year IT
-          student at HAMK, in Finland. I am proficient in HTML, CSS,
-          JavaScript and React. In addition, I have experience working with
-          Vue.js and Node.js. I have studied and graduated as an art teacher
-          from my prior education, where I honed my graphic design skills.
+            I am a junior front-end developer who is currently a second-year IT
+            student at HAMK, in Finland. I am proficient in HTML, CSS,
+            JavaScript and React. In addition, I have experience working with
+            Vue.js and Node.js. I have studied and graduated as an art teacher
+            from my prior education, where I honed my graphic design skills.
           </p>
           <div class="person d-flex">
             <div class="person-img-wrap overflow-hidden">
@@ -355,13 +309,7 @@
               />
             </div>
             <div
-              class="
-                d-flex
-                align-items-start
-                flex-column
-                justify-content-center
-                ps-3
-              "
+              class="d-flex align-items-start flex-column justify-content-center ps-3"
             >
               <h5 class="mb-0 title-color" style="font-size: 18px">
                 Cihan Erenler
@@ -385,7 +333,13 @@
                   email me
                 </p>
                 <h1 class="display-5 fw-bold title-color mb-5">Contact</h1>
-                <form method="POST" name="contact" class="form" data-netlify="true" action="/success.html">
+                <form
+                  method="POST"
+                  name="contact"
+                  class="form"
+                  data-netlify="true"
+                  action="/success.html"
+                >
                   <div class="mb-3">
                     <input
                       type="text"
@@ -394,9 +348,7 @@
                       name="name"
                       placeholder="Your name"
                     />
-                    <div class="invalid-feedback">
-                      Please enter your name.
-                    </div>
+                    <div class="invalid-feedback">Please enter your name.</div>
                   </div>
                   <div class="mb-3">
                     <input
@@ -406,9 +358,7 @@
                       name="email"
                       placeholder="Your email"
                     />
-                    <div class="invalid-feedback">
-                      Please enter your email.
-                    </div>
+                    <div class="invalid-feedback">Please enter your email.</div>
                   </div>
                   <div class="mb-3">
                     <textarea
@@ -424,25 +374,14 @@
                   </div>
                   <button
                     type="submit"
-                    class="
-                      custom-btn
-                      custom-btn-primary
-                      custom-btn-small
-                      custom-btn-full
-                    "
+                    class="custom-btn custom-btn-primary custom-btn-small custom-btn-full"
                   >
                     Send
                   </button>
                 </form>
               </div>
               <div
-                class="
-                  col-lg-6
-                  d-lg-flex
-                  align-items-center
-                  justify-content-center
-                  d-none
-                "
+                class="col-lg-6 d-lg-flex align-items-center justify-content-center d-none"
               >
                 <img
                   class="img-fluid h-75"
@@ -460,12 +399,7 @@
       <footer id="main-footer" class="bg-dark py-4">
         <div>
           <div
-            class="
-              social-links
-              d-flex
-              align-items-center
-              justify-content-center
-            "
+            class="social-links d-flex align-items-center justify-content-center"
           >
             <a href="https://www.linkedin.com/in/cihanerenler/" target="_blank">
               <i class="fab fa-linkedin-in mx-2 text-light"></i>
@@ -480,14 +414,20 @@
         </div>
         <p class="text-center text-muted mb-1">&copy; 2021 Copyright</p>
         <p class="text-muted text-center mb-0">
-          Made by <a class="primary" href="https://www.linkedin.com/in/cihanerenler/" target="_blank">Cihan Erenler</a>
+          Made by
+          <a
+            class="primary"
+            href="https://www.linkedin.com/in/cihanerenler/"
+            target="_blank"
+            >Cihan Erenler</a
+          >
         </p>
       </footer>
     </main>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/vue@next"></script>
-    <script src="src/js/vue.js" type="module" ></script>
+    <script src="src/js/vue.js" type="module"></script>
     <script src="src/js/bootstrap.js"></script>
     <script src="src/js/index.js" defer></script>
   </body>
