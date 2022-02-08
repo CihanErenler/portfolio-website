@@ -235,6 +235,13 @@
                   {{project.desc}}
                 </p>
               </div>
+              <div class="mb-3">
+                <span
+                  v-for="tag in project.tags"
+                  class="badge rounded-pill text-dark bg-light me-1"
+                  >#{{tag}}</span
+                >
+              </div>
               <div class="card-buttons d-flex mb-4">
                 <a
                   :href="project.preview"
@@ -428,7 +435,7 @@
     <!-- Scripts -->
     <script src="https://unpkg.com/vue@next"></script>
     <script src="src/js/vue.js" type="module"></script>
-    <script src="src/js/bootstrap.js"></script>
+    <script src="src/js/bootstrap.min.js"></script>
     <script src="src/js/index.js" defer></script>
   </body>
 </html>

@@ -21,6 +21,7 @@ export const projects = [
       { lang: "html", class: "html-group", per: 2.8 },
       { lang: "css", class: "css-group", per: 2.3 },
     ],
+    tags: ["React", "Tailwind Css", "React Router", "Axios", "React Icons"],
   },
   {
     id: 2,
@@ -35,6 +36,7 @@ export const projects = [
       { lang: "html", class: "html-group", per: 4.3 },
       { lang: "css", class: "css-group", per: 30.6 },
     ],
+    tags: ["React", "CSS", "React Router", "Material UI"],
   },
   {
     id: 3,
@@ -49,6 +51,7 @@ export const projects = [
       { lang: "html", class: "html-group", per: 10.5 },
       { lang: "css", class: "css-group", per: 36.9 },
     ],
+    tags: ["React", "CSS", "React Color", "React Icons"],
   },
   {
     id: 4,
@@ -63,6 +66,7 @@ export const projects = [
       { lang: "html", class: "html-group", per: 9.3 },
       { lang: "css", class: "css-group", per: 33.4 },
     ],
+    tags: ["React", "React Icons", "CSS"],
   },
   {
     id: 5,
@@ -77,5 +81,6 @@ export const projects = [
       { lang: "html", class: "html-group", per: 16.8 },
       { lang: "css", class: "css-group", per: 27.8 },
     ],
+    tags: ["Javascript", "CSS"],
   },
 ];
