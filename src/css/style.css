@@ -402,10 +402,10 @@ ul {
   padding: 0 !important;
 }
 
-.custom-card-img .react-project{
+.custom-card-img .react-project {
   right: 20px !important;
   bottom: 20px !important;
-  background: rgba(0,0,0,.5);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 20;
   width: 160px;
   height: 30px;
@@ -418,7 +418,7 @@ ul {
   color: var(--react);
 }
 
-.custom-card-img .react-project i{
+.custom-card-img .react-project i {
   font-size: 22px;
   animation: spin 10s linear infinite;
   margin-right: 5px;
@@ -437,7 +437,7 @@ ul {
 
 .card-bottom {
   left: 24px;
-  bottom: 24px;
+  bottom: 12px;
   right: 24px;
 }
 
@@ -525,7 +525,6 @@ ul {
 #main-footer .social-links {
 }
 
-
 .success-message {
   background: var(--custom-bg-light);
   height: 100vh;
@@ -537,7 +536,7 @@ ul {
   place-items: center;
 }
 
-.success-message .card{
+.success-message .card {
   height: 300px;
   max-width: 400px;
   border: 0;
@@ -565,7 +564,8 @@ ul {
   stroke: #4bb71b;
   stroke-miterlimit: 10;
   box-shadow: inset 0px 0px 0px #4bb71b;
-  animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+  animation: fill 0.4s ease-in-out 0.4s forwards,
+    scale 0.3s ease-in-out 0.9s both;
   position: relative;
   top: 5px;
   right: 5px;
@@ -580,7 +580,6 @@ ul {
   stroke: #4bb71b;
   fill: #fff;
   animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
-
 }
 
 .checkmark__check {
@@ -597,7 +596,6 @@ ul {
 }
 
 @keyframes scale {
-
   0%,
   100% {
     transform: none;
